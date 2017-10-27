@@ -1,0 +1,38 @@
+{
+  "name": "glitch-cd",
+  "version": "0.0.1",
+  "description": "Autodeployment of code on glitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anglinb/glitch-cd.git"
+  },
+  "keywords": [
+    "glitch",
+    "cd",
+    "ci",
+    "continuous",
+    "deployment",
+    "continuous",
+    "integration"
+  ],
+  "author": "Brian Anglin <banglin@usc.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anglinb/glitch-cd/issues"
+  },
+  "homepage": "https://github.com/anglinb/glitch-cd#readme",
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "delete": "^1.1.0",
+    "express": "^4.16.2",
+    "fs-extra": "^4.0.2"
+  }
+}
