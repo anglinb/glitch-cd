@@ -19,7 +19,7 @@ module.exports = (opts = {}) => {
 
   let ensureAuthorization = (req, res, next) => {
     if (req.query.secret !== glitchCdSecret) {
-      res.json(401, { error: { message: 'Your secret is invalid' } })
+      res.status(401).json({ error: { message: 'Your secret is invalid' } })
       return
     }
     next()
@@ -39,7 +39,7 @@ module.exports = (opts = {}) => {
       let resp = await continuousDeployer.deploy({ ref })
       res.json(resp)
     } catch (e) {
-      res.json(500, e)
+      res.status(500).json(e)
     }
   })
   return router
